@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Ricoeur: Vida, Obra y Pensamiento</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #2980b9;
+            --text-color: #333;
+            --bg-color: #f4f4f9;
+            --container-bg: #ffffff;
+            --quote-bg: #ecf0f1;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--container-bg);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--accent-color);
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        .main-image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .main-image-container img {
+            max-width: 100%;
+            height: auto;
+            max-height: 400px;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        
+        .main-image-container figcaption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        section {
+            padding: 30px 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 2.2em;
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        
+        h3 {
+            font-size: 1.6em;
+            color: var(--secondary-color);
+            margin-top: 30px;
+        }
+
+        blockquote {
+            background-color: var(--quote-bg);
+            border-left: 5px solid var(--accent-color);
+            margin: 20px 0;
+            padding: 20px;
+            font-size: 1.1em;
+            font-style: italic;
+        }
+
+        blockquote footer {
+            text-align: right;
+            font-style: normal;
+            font-weight: bold;
+            margin-top: 10px;
+            color: var(--primary-color);
+        }
+
+        .influences-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #fdfdfd;
+            padding: 15px;
+            margin-bottom: 10px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            transition: box-shadow 0.3s ease;
+        }
+        
+        ul li:hover {
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        ul li strong {
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .work-links a {
+            margin-right: 15px;
+            font-size: 0.9em;
+        }
+
+        footer.page-footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            .influences-grid {
+                grid-template-columns: 1fr;
+            }
+            header h1 {
+                font-size: 2.5em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Paul Ricoeur</h1>
+            <p>La travesía del sentido: del símbolo al texto, del texto a la acción.</p>
+        </header>
+
+        <main>
+            <div class="main-image-container">
+                <figure>
+                    <!-- INSTRUCCIÓN: Reemplaza esta URL por una imagen real de Paul Ricoeur -->
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Paul_Ricoeur_in_1990.jpg/800px-Paul_Ricoeur_in_1990.jpg" alt="Retrato de Paul Ricoeur">
+                    <figcaption>Paul Ricoeur (1913 - 2005)</figcaption>
+                </figure>
+            </div>
+
+            <section id="vida">
+                <h2>Biografía y Trayectoria</h2>
+                <p>
+                    Paul Ricoeur nació en Valence, Francia, en 1913. Su vida estuvo marcada por profundas tragedias personales y los grandes cataclismos del siglo XX. Huérfano de madre al nacer y de padre en la Primera Guerra Mundial, fue criado por sus abuelos en un ambiente protestante y austero, lo que influyó notablemente en su pensamiento sobre la finitud y la culpabilidad.
+                </p>
+                <p>
+                    Estudió filosofía en la Sorbona y se sintió profundamente atraído por la fenomenología de Edmund Husserl. Su carrera fue interrumpida por la Segunda Guerra Mundial, donde fue hecho prisionero. Durante su cautiverio, tradujo las <em>Ideas</em> de Husserl al francés, un trabajo que cimentó su dominio de la fenomenología. Tras la guerra, enseñó en diversas universidades, incluyendo la Sorbona y Nanterre, donde vivió los eventos de mayo de 1968, y finalmente en la Universidad de Chicago, consolidando su reputación internacional. Murió en 2005, dejando un legado filosófico inmenso y diverso.
+                </p>
+            </section>
+            
+            <section id="contexto">
+                <h2>Contexto Histórico y Filosófico</h2>
+                <p>
+                    El pensamiento de Ricoeur es un diálogo constante con las corrientes filosóficas de su tiempo. Se formó en la <strong>fenomenología</strong> (Husserl, Heidegger) y el <strong>existencialismo</strong> (Marcel, Jaspers), pero pronto buscó un "injerto" de estas corrientes con el <strong>estructuralismo</strong>, que dominaba la escena intelectual francesa. Su proyecto puede entenderse como una mediación: buscó tender puentes entre la filosofía del sujeto y las ciencias humanas, entre la explicación (propia de las ciencias) y la comprensión (propia de la hermenéutica). Vivió las dos guerras mundiales, la Guerra Fría y las transformaciones sociales de la posguerra, reflexionando siempre sobre la memoria, la historia y la justicia desde esa experiencia.
+                </p>
+            </section>
+
+            <section id="pensamiento">
+                <h2>Principales Ideas de su Pensamiento</h2>
+
+                <h3>Hermenéutica Filosófica</h3>
+                <p>
+                    Para Ricoeur, la hermenéutica no es solo una técnica de interpretación de textos, sino una filosofía de la existencia. Sostenía que no tenemos un acceso directo a nosotros mismos; nos comprendemos de manera mediata, a través de los signos, símbolos y textos que hemos producido. Su famosa máxima encapsula este "rodeo largo" de la autocomprensión.
+                </p>
+                <blockquote>
+                    "El símbolo da que pensar."
+                    <footer>- Finitud y culpabilidad</footer>
+                </blockquote>
+
+                <h3>La Identidad Narrativa</h3>
+                <p>
+                    Una de sus contribuciones más célebres. Ricoeur propone que la identidad personal no es una sustancia fija (identidad-idem), sino que se construye como un relato (identidad-ipse). Respondemos a la pregunta "¿Quién soy?" contando la historia de nuestra vida. Esta identidad narrativa es flexible, integra los cambios y las contradicciones, y nos permite mantener una coherencia a lo largo del tiempo.
+                </p>
+                <blockquote>
+                    "La identidad narrativa, frágil remedio contra la pérdida de sentido, no suprime sino que integra la discordancia en el seno de la concordancia."
+                    <footer>- Tiempo y Narración III</footer>
+                </blockquote>
+                
+                <h3>La Metáfora Viva</h3>
+                <p>
+                    Ricoeur revoluciona el estudio de la metáfora. Lejos de ser un mero adorno del lenguaje, la metáfora es una innovación semántica: crea un nuevo significado. Al conectar dos ideas que parecían distantes, la "metáfora viva" nos permite ver la realidad de una manera nueva, redibujando nuestro paisaje conceptual.
+                </p>
+                <blockquote>
+                    "La metáfora es la capacidad de producir un sentido nuevo en el punto de intersección de varias series semánticas."
+                    <footer>- La metáfora viva</footer>
+                </blockquote>
+
+                <h3>Memoria, Historia y Olvido</h3>
+                <p>
+                    En su obra tardía, Ricoeur aborda la compleja relación entre el recuerdo individual (memoria), el relato colectivo (historia) y la necesidad del perdón (a través de un justo olvido). Analiza los abusos de la memoria (memoria manipulada) y de la historia (utilizada con fines ideológicos) y aboga por una "memoria feliz" y una política del justo recuerdo.
+                </p>
+                <blockquote>
+                    "El deber de memoria es el deber de hacer justicia, por el recuerdo, a otro distinto de sí."
+                     <footer>- La memoria, la historia, el olvido</footer>
+                </blockquote>
+            </section>
+
+            <section id="influencias">
+                <h2>Influencias Recibidas y Ejercidas</h2>
+                <div class="influences-grid">
+                    <div>
+                        <h3>Influencias Recibidas</h3>
+                        <ul>
+                            <li><strong>Fenomenología:</strong> Edmund Husserl y Martin Heidegger.</li>
+                            <li><strong>Existencialismo cristiano:</strong> Gabriel Marcel y Karl Jaspers.</li>
+                            <li><strong>Estructuralismo:</strong> Ferdinand de Saussure y Claude Lévi-Strauss (con quien dialogó críticamente).</li>
+                            <li><strong>Filosofía del lenguaje:</strong> Ludwig Wittgenstein.</li>
+                            <li><strong>Tradición bíblica y teológica.</strong></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Influencia Ejercida</h3>
+                        <ul>
+                            <li><strong>Teoría literaria:</strong> En los estudios sobre narratología y metáfora.</li>
+                            <li><strong>Historiografía:</strong> En la filosofía de la historia y la reflexión sobre el oficio del historiador.</li>
+                            <li><strong>Ética y Filosofía Política:</strong> Especialmente en debates sobre justicia, reconocimiento y memoria.</li>
+                            <li><strong>Psicología y Psicoanálisis:</strong> En la comprensión del "sí mismo" como una construcción narrativa.</li>
+                            <li><strong>Teología:</strong> En la hermenéutica bíblica y la filosofía de la religión.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="obras">
+                <h2>Principales Obras</h2>
+                <p>A continuación, una selección de sus obras más influyentes con enlaces a versiones digitales (gratuitas cuando es posible) o a tiendas en línea para su adquisición en español.</p>
+                <ul>
+                    <li>
+                        <strong>Finitud y culpabilidad (1960)</strong>
+                        Una obra monumental sobre la condición humana, la falibilidad y el mal.
+                        <div class="work-links">
+                            <a href="https://www.amazon.es/Finitud-culpabilidad-Paul-Ricoeur/dp/8481646949/" target="_blank">Comprar en Amazon</a>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>El conflicto de las interpretaciones (1969)</strong>
+                        Recopilación de ensayos clave donde dialoga con el estructuralismo, el psicoanálisis y la fenomenología.
+                        <div class="work-links">
+                            <a href="https://archive.org/details/elconflictodelas0000rico" target="_blank">Préstamo en Archive.org</a>
+                            <a href="https://www.amazon.es/conflicto-las-interpretaciones-hermen%C3%A9utica-Estructuras/dp/9505575993/" target="_blank">Comprar en Amazon</a>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>La metáfora viva (1975)</strong>
+                        Estudio fundamental sobre cómo la metáfora crea nuevos significados y reconfigura la realidad.
+                        <div class="work-links">
+                            <a href="https://www.amazon.es/met%C3%A1fora-viva-Paul-Ricoeur/dp/8491048687/" target="_blank">Comprar en Amazon</a>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Tiempo y narración (3 vols., 1983-1985)</strong>
+                        Su obra magna, donde desarrolla la teoría de la identidad narrativa a través de un análisis de la historia y la ficción.
+                        <div class="work-links">
+                             <a href="https://www.amazon.es/TIEMPO-NARRACION-CONFIGURACION-RELATO-FICCION/dp/9682320115/" target="_blank">Comprar en Amazon (Vol. 1)</a>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Sí mismo como otro (1990)</strong>
+                        Profunda investigación sobre la identidad personal, distinguiendo entre la mismidad (idem) y la ipseidad (ipse) a través de la dialéctica del sí y el otro.
+                        <div class="work-links">
+                            <a href="https://archive.org/details/simismocomoootro0000rico" target="_blank">Préstamo en Archive.org</a>
+                            <a href="https://www.amazon.es/Mismo-Como-Otro-Paul-Ricoeur/dp/9682320239" target="_blank">Comprar en Amazon</a>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>La memoria, la historia, el olvido (2000)</strong>
+                        Una reflexión sobre la representación del pasado, el trabajo de la memoria y el deber de la historia, culminando en una meditación sobre el perdón.
+                        <div class="work-links">
+                            <a href="https://www.amazon.es/memoria-historia-olvido-Estructuras-Procesos/dp/8475844883/" target="_blank">Comprar en Amazon</a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            
+            <section id="fuentes">
+                <h2>Fuentes y Enlaces Externos</h2>
+                
+                <h3>Artículos en Academia.edu</h3>
+                <p>Una selección de trabajos académicos para profundizar en el pensamiento de Ricoeur.</p>
+                 <ul>
+                    <li><a href="https://www.academia.edu/37021743/La_identidad_narrativa_de_Paul_Ricoeur" target="_blank">La identidad narrativa de Paul Ricoeur</a></li>
+                    <li><a href="https://www.academia.edu/23759714/Hermen%C3%A9utica_y_acci%C3%B3n_en_Paul_Ricoeur" target="_blank">Hermenéutica y acción en Paul Ricoeur</a></li>
+                    <li><a href="https://www.academia.edu/4119958/El_concepto_de_justicia_en_Paul_Ricoeur" target="_blank">El concepto de Justicia en Paul Ricoeur</a></li>
+                </ul>
+                
+                <h3>Fuentes de Información</h3>
+                <p>Enciclopedias y sitios de referencia utilizados para la elaboración de esta página.</p>
+                <ul>
+                    <li><a href="https://plato.stanford.edu/entries/ricoeur/" target="_blank">Stanford Encyclopedia of Philosophy - Paul Ricoeur</a></li>
+                    <li><a href="https://www.iep.utm.edu/ricoeur/" target="_blank">Internet Encyclopedia of Philosophy - Paul Ricoeur</a></li>
+                    <li><a href="https://es.wikipedia.org/wiki/Paul_Ricoeur" target="_blank">Wikipedia - Paul Ricoeur</a></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <p>Página creada con fines educativos. Contenido sintetizado a partir de fuentes académicas de referencia sobre Paul Ricoeur.</p>
+        </footer>
+    </div>
+</body>
+</html>
